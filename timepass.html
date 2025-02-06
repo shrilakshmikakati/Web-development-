@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        p,.pagename{
+            font-size: 30px;
+            color: brown;
+            text-align: center;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+        nav{
+            background-color: cornsilk;
+            display: flex;
+            justify-content: center;
+            gap: 90px;
+            padding: 10px 20px;
+            }
+        nav,a{
+            text-decoration: none;
+            color: black; 
+            
+        }
+
+        #slidingphotos{
+            margin: 50px 0 0 200px;
+            width: 70%;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .slidingphotos, img{
+            width: 20%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            transition: ease-in-out 0.5s;
+        }
+        .slidingphotos,img:hover{
+            width: 55%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p class="pagename">Photo Gallery</p>
+        <div class="headerlinks">
+            <nav>
+                <a href=".albums" class="albums">Albums</a>
+                <a href=".photos" class="photos">Photos</a>
+                <a href=".videos" class="videos">Videos</a>
+                <a href=".signup" class="signup">Sign up</a>
+                <a href=".login" class="login">Login</a>
+            </nav>
+        </div>
+    </div>
+
+    <div id="slidingphotos">
+        <img src="dogpic1.jpeg">
+        <img src="dogpic2.jpeg">
+        <img src="dogpic3.jpeg">
+        <img src="dogpic4.jpeg">
+        <img src="dogpic5.jpeg">
+    </div>
+
+
+    <footer>
+        <p> &copyArchikiessGallery</p>
+    </footer>
+</body>
+</html>
+
